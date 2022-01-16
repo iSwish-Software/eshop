@@ -9,7 +9,9 @@
     "release": "standard-version",
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
-    "release:major": "standard-version --release-as major"
+    "release:major": "standard-version --release-as major",
+    "specs:verify": "cucumber-js -f json:dist/features/verify-results.json --tags \"not @ignore\"",
+    "specs:report": "node generate-cucumber-html-report.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +19,10 @@
   "devDependencies": {
     "@commitlint/cli": "^16.0.2",
     "@commitlint/config-conventional": "^16.0.0",
+    "@cucumber/cucumber": "^8.0.0-rc.2",
+    "chai": "^4.3.4",
     "commitizen": "^4.2.4",
+    "cucumber-html-reporter": "^5.5.0",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^7.0.4",
     "standard-version": "^9.3.2"

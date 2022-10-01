@@ -1,2 +1,9 @@
 
 node_modules
+
+.suo
+
+[Bb]in/
+[Oo]bj/
+
+.vs/

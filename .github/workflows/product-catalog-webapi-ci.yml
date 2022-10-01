@@ -2,8 +2,11 @@ name: ProductCatalog.WebApi CI workflow
 
 on:
   push:
+    paths:
+      - .github/workflows/product-catalog-webapi-ci.yml
+      - src/ProductCatalog.WebApi/**
     branches:
-      - 'src/ProductCatalog/WebApi/**'
+      - '**'
 
 jobs:
   build:
